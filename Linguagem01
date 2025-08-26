@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int reconhece_L (char *s) {
+    
+    int tamanho = strlen(s); //Calcula o tamanho da string s
+    int n0 = 0; //Qtdd de zeros 0
+    int n1 = 0; //Qtdd de uns 1
+    
+    int i=0;
+
+    while(s[i == '0']) {n0++, i++;}
+    while (s[i] == '1') {n1++, i++;}
+    
+    if(n0 == n1) return 1;
+        else return 0;
+        
+
+}
+
+
+int main(int argc, char ** argc ){ //numero de parametros int argc. Toda vez que escrevemos um parametro ela ira processar
+
+    char buf[1233];
+    if(argc == 2) {
+        printf("%s\n", reconhece_L(argv[1]) ? "ACEITA" : "REJEITA");
+    }
+
+
+
+    return 0;
+}
